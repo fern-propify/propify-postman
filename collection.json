@@ -10,7 +10,7 @@
       "type": "string"
     },
     {
-      "key": "propify-api-key",
+      "key": "propify-api-secret",
       "value": "",
       "type": "string"
     }
@@ -19,12 +19,12 @@
     "apikey": [
       {
         "key": "value",
-        "value": "{{propify-api-key}}",
+        "value": "{{propify-api-secret}}",
         "type": "string"
       },
       {
         "key": "key",
-        "value": "{{propify-api-key}}",
+        "value": "{{propify-api-secret}}",
         "type": "string"
       },
       {
@@ -56,8 +56,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -106,8 +106,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -156,8 +156,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -189,8 +189,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -239,8 +239,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -272,8 +272,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -322,8 +322,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -372,8 +372,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -422,8 +422,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -472,8 +472,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -505,8 +505,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -555,8 +555,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -588,8 +588,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],
@@ -638,8 +638,8 @@
             },
             "header": [
               {
-                "key": "propify-api-key",
-                "value": "{{propify-api-key}}",
+                "key": "propify-api-secret",
+                "value": "{{propify-api-secret}}",
                 "type": "string"
               }
             ],

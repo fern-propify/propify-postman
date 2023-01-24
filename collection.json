@@ -6,7 +6,7 @@
   "variable": [
     {
       "key": "baseUrl",
-      "value": "",
+      "value": "demo.getpropify.com/v1",
       "type": "string"
     },
     {

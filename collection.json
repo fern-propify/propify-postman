@@ -1,0 +1,655 @@
+{
+  "info": {
+    "name": "Propify API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "",
+      "type": "string"
+    },
+    {
+      "key": "propify-api-key",
+      "value": "",
+      "type": "string"
+    }
+  ],
+  "auth": {
+    "apikey": [
+      {
+        "key": "value",
+        "value": "{{propify-api-key}}",
+        "type": "string"
+      },
+      {
+        "key": "key",
+        "value": "{{propify-api-key}}",
+        "type": "string"
+      },
+      {
+        "key": "in",
+        "value": "header",
+        "type": "string"
+      }
+    ],
+    "type": "apikey"
+  },
+  "item": [
+    {
+      "name": "Accounting",
+      "item": [
+        {
+          "name": "Retrieves all accounting records",
+          "request": {
+            "url": {
+              "raw": "{{baseUrl}}/v1/accounting",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "accounting"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Applicants",
+      "item": [
+        {
+          "name": "Retrieve all applicants",
+          "request": {
+            "description": "Get all applicants",
+            "url": {
+              "raw": "{{baseUrl}}/v1/applicants?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "applicants"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        },
+        {
+          "name": "Retrieves a single applicants by applicants ID",
+          "request": {
+            "description": "Get a single applicant",
+            "url": {
+              "raw": "{{baseUrl}}/v1/applicants/:id?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "applicants",
+                ":id"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Leads",
+      "item": [
+        {
+          "name": "Retrieves all leads",
+          "request": {
+            "url": {
+              "raw": "{{baseUrl}}/v1/leads",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "leads"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Leases",
+      "item": [
+        {
+          "name": "Retrieves all leases",
+          "request": {
+            "description": "Get all leases",
+            "url": {
+              "raw": "{{baseUrl}}/v1/leases?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "leases"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Listings",
+      "item": [
+        {
+          "name": "Retrieves all listings",
+          "request": {
+            "url": {
+              "raw": "{{baseUrl}}/v1/listings",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "listings"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Properties",
+      "item": [
+        {
+          "name": "Retrieves all properties",
+          "request": {
+            "description": "Get all properties",
+            "url": {
+              "raw": "{{baseUrl}}/v1/properties?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "properties"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Rent Payment History",
+      "item": [
+        {
+          "name": "Retrieves all rent payment history records",
+          "request": {
+            "description": "Get all rent payment history records",
+            "url": {
+              "raw": "{{baseUrl}}/v1/rent-payment-history?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "rent-payment-history"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Residents",
+      "item": [
+        {
+          "name": "Retrieves all residents",
+          "request": {
+            "description": "Get all residents",
+            "url": {
+              "raw": "{{baseUrl}}/v1/residents?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "residents"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        },
+        {
+          "name": "Retrieves a single resident by resident ID",
+          "request": {
+            "description": "Get a single resident",
+            "url": {
+              "raw": "{{baseUrl}}/v1/residents/:id?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "residents",
+                ":id"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": [
+                {
+                  "key": "id",
+                  "value": ""
+                }
+              ]
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Unit Pricing",
+      "item": [
+        {
+          "name": "Retrieves all unit pricing",
+          "request": {
+            "url": {
+              "raw": "{{baseUrl}}/v1/unit-pricing",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "unit-pricing"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Units",
+      "item": [
+        {
+          "name": "Retrieves all units",
+          "request": {
+            "description": "Get all units",
+            "url": {
+              "raw": "{{baseUrl}}/v1/units?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "units"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Vendors",
+      "item": [
+        {
+          "name": "Retrieves all vendors",
+          "request": {
+            "url": {
+              "raw": "{{baseUrl}}/v1/vendors",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "vendors"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    },
+    {
+      "name": "Work Orders",
+      "item": [
+        {
+          "name": "Retrieves all work orders",
+          "request": {
+            "description": "Get all work orders",
+            "url": {
+              "raw": "{{baseUrl}}/v1/work-orders?order-by=&offset=&limit=",
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "path": [
+                "v1",
+                "work-orders"
+              ],
+              "query": [
+                {
+                  "key": "order-by",
+                  "value": "",
+                  "description": "Order the results by a field. \nOptionally include asc or desc preceded by a colon (default is asc). \nExample: `?order-by=vendor:asc,created_at:desc`\n"
+                },
+                {
+                  "key": "offset",
+                  "value": "",
+                  "description": "Can be used for paginating results"
+                },
+                {
+                  "key": "limit",
+                  "value": "",
+                  "description": "A number between 1 and 250 to determine the number of results to return in a single query"
+                }
+              ],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "propify-api-key",
+                "value": "{{propify-api-key}}",
+                "type": "string"
+              }
+            ],
+            "method": "GET"
+          },
+          "response": [],
+          "_type": "endpoint"
+        }
+      ],
+      "_type": "container"
+    }
+  ]
+}
